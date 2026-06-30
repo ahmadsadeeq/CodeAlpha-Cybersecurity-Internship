@@ -1,0 +1,16 @@
+
+body{margin:0;font-family:Segoe UI,Arial;background:#0f172a;color:#e2e8f0}
+.hero{text-align:center;padding:70px 20px;background:linear-gradient(135deg,#1e293b,#0f172a)}
+button{padding:10px 18px;border:none;border-radius:8px;cursor:pointer}
+.container{max-width:1000px;margin:auto;padding:20px}
+.module{display:none;background:#1e293b;padding:25px;border-radius:12px;animation:fade .5s}
+.active{display:block}
+.progress-container{height:8px;background:#334155}
+#progress{height:100%;width:12%;background:#22c55e;transition:.4s}
+.example,.card{background:#334155;padding:15px;border-radius:8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+table{width:100%;border-collapse:collapse}
+td,th{border:1px solid #475569;padding:8px}
+.nav{text-align:center;margin:20px}
+#certificate{background:white;color:black;margin-top:20px;padding:20px;border-radius:10px;display:none}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1}}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phishing Awareness Training</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+<h1>🛡️ Phishing Awareness Training</h1>
+<p>Learn how to recognize phishing emails, fake websites, and social engineering attacks.</p>
+<button onclick="startCourse()">Start Training</button>
+</header>
+
+<div class="progress-container"><div id="progress"></div></div>
+
+<div class="container">
+
+<section class="module active">
+<h2>1. What is Phishing?</h2>
+<p>Phishing is a cyberattack where attackers impersonate trusted organizations to steal credentials, financial information, or sensitive data.</p>
+<ul>
+<li>Email Phishing</li>
+<li>Spear Phishing</li>
+<li>Smishing (SMS)</li>
+<li>Vishing (Voice Calls)</li>
+</ul>
+</section>
+
+<section class="module">
+<h2>2. Recognizing Phishing Emails</h2>
+<div class="example">
+<strong>From:</strong> support@paypa1-security.com<br>
+<strong>Subject:</strong> URGENT: Verify Your Account<br><br>
+Your account will be suspended in 24 hours. Click below immediately.
+</div>
+<h3>Warning Signs</h3>
+<ul>
+<li>Suspicious sender address</li>
+<li>Urgent language</li>
+<li>Unexpected links or attachments</li>
+<li>Requests for passwords</li>
+</ul>
+</section>
+
+<section class="module">
+<h2>3. Spotting Fake Websites</h2>
+<p>Always inspect the URL carefully.</p>
+<table>
+<tr><th>Legitimate</th><th>Fake</th></tr>
+<tr><td>https://paypal.com</td><td>https://paypa1-security.com</td></tr>
+</table>
+<ul>
+<li>Check HTTPS</li>
+<li>Watch for misspellings</li>
+<li>Verify domain ownership</li>
+</ul>
+</section>
+
+<section class="module">
+<h2>4. Social Engineering Tactics</h2>
+<div class="cards">
+<div class="card">😨 Fear</div>
+<div class="card">⏰ Urgency</div>
+<div class="card">👔 Authority</div>
+<div class="card">🎁 Rewards</div>
+</div>
+<p>Attackers manipulate emotions to make victims act without thinking.</p>
+</section>
+
+<section class="module">
+<h2>5. Best Practices</h2>
+<ul>
+<li>Enable Multi-Factor Authentication (MFA)</li>
+<li>Use strong passwords</li>
+<li>Verify URLs before clicking</li>
+<li>Keep software updated</li>
+<li>Report suspicious emails</li>
+</ul>
+</section>
+
+<section class="module">
+<h2>6. Real-World Example</h2>
+<p>An employee received a fake Microsoft login email and entered credentials into a fraudulent site. Attackers gained access and stole company data.</p>
+<p><strong>Lesson:</strong> Verify before you trust.</p>
+</section>
+
+<section class="module quiz">
+<h2>Quiz</h2>
+
+<div class="question">
+<p>1. Which is a phishing indicator?</p>
+<label><input type="radio" name="q1" value="1">Urgent request for credentials</label><br>
+<label><input type="radio" name="q1" value="0">Professional branding</label>
+</div>
+
+<div class="question">
+<p>2. What should you do before clicking a link?</p>
+<label><input type="radio" name="q2" value="1">Hover and verify URL</label><br>
+<label><input type="radio" name="q2" value="0">Click immediately</label>
+</div>
+
+<div class="question">
+<p>3. What is social engineering?</p>
+<label><input type="radio" name="q3" value="1">Manipulating people to reveal information</label><br>
+<label><input type="radio" name="q3" value="0">Installing antivirus software</label>
+</div>
+
+<div class="question">
+<p>4. Which URL looks suspicious?</p>
+<label><input type="radio" name="q4" value="0">https://bank.com</label><br>
+<label><input type="radio" name="q4" value="1">https://bank-security-login.xyz</label>
+</div>
+
+<div class="question">
+<p>5. What is MFA?</p>
+<label><input type="radio" name="q5" value="1">Multi-Factor Authentication</label><br>
+<label><input type="radio" name="q5" value="0">Multiple File Access</label>
+</div>
+
+<button onclick="finishQuiz()">Finish Quiz</button>
+</section>
+
+<section class="module">
+<h2>Results & Answer Review</h2>
+<div id="results"></div>
+<input id="name" placeholder="Enter your name for certificate">
+<button onclick="generateCertificate()">Generate Certificate</button>
+<div id="certificate"></div>
+</section>
+
+<div class="nav">
+<button onclick="prevModule()">Previous</button>
+<button onclick="nextModule()">Next</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
